@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mada:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      TOPSTOCKS
+    </title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <a href="#" class="navbar-brand pl-5"
+          ><span class="text-green">TOP</span>STOCKS</a
+        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <div
+            class="navnar-nav ml-auto pr-5 text-light text-uppercase font-weight-bold"
+          >
+            <span class="mr-2">
+              <img src="img/flag.png" alt="">
+            </span>
+            English <i class="fa fa-angle-down"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-uppercase header-title">
+              click <span class="text-green">here</span> to find out more
+            </h1>
+          </div>
+          <div class="col sing-up">
+            <div class="d-flex justify-content-between row-hl">
+              <div class="p-4 item-hl">
+                <h3 class="text-uppercase font-weight-bold txt-gray">
+                  Join us
+                </h3>
+              </div>
+              <div class="pt-4 pb-4item-hl font-weight-bold h3 txt-gray">
+                1<span class="line"></span> 2
+              </div>
+            </div>
+            <form>
+              <div class="form-row tex">
+                <div class="col">
+                    <i class="fa fa-user user-icon"></i>
+                  <input
+                    type="text"
+                    class="form-control input-text p-4"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="col">
+                    <i class="fa fa-user user-icon"></i>
+                  <input
+                    type="text"
+                    class="form-control input-text p-4"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                  <i class="fa fa-envelope user-icon"></i>
+                <input
+                  class="form-control input-text form-control-lg p-4"
+                  type="email"
+                  id="email"
+                  placeholder="Enter email"
+                />
+              </div>
+              <div class="form-group ml-4 pl-4">
+                <label class="form-check-label mr-2 mt-3 txt-gray">
+                  <input type="checkbox" class="form-check-input" /> I have read understand and accept the <span class="text-green-sml">terms and conditions</span>
+                </label>
+              </div>
+              <button class="btn btn-block btn-green" id="show-popup">GO TO NEXT STEP</button>
+              <p class="form-lock pt-2"><span><i class="fa fa-lock lock"></i></span> Your data is always protected whit us. <br>You can change your mind anytime <spam class="text-green-sml">more...</spam></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- POP UP  NEXT STEP -->
+      <div class="popup">
+        <div class="popup-content">
+          <div class="popup-img text-right">
+            <i class="fa fa-times fa-2x popup-cls"></i>
+          </div>
+          <div class="row popup-data tex">
+            <div class="col-md-3 pt-3">
+							<h5 class="text-center text-light pt-2 ">START MAKING</h5>
+							<h5 class="text-green text-center">MONEY TODAY!</h5>
+            </div>
+            <div class="col-md-6 pt-3">
+					<form>
+							<div class="form-row">
+							  <div class="col">
+								  <i class="fa fa-user user-icon-popup"></i>
+								<input
+								  type="text"
+								  class="form-control input-text"
+								  placeholder="First Name"
+								/>
+							  </div>
+							  <div class="col">
+								  <i class="fa fa-user user-icon-popup"></i>
+								<input
+								  type="text"
+								  class="form-control input-text"
+								  placeholder="Last Name"
+								/>
+							  </div>
+							</div>
+							<div class="form-group mt-3">
+								<i class="fa fa-envelope user-icon-popup"></i>
+							  <input
+								class="form-control input-text "
+								type="email"
+								id="email"
+								placeholder="Enter email"
+							  />
+							</div>
+						  </form>
+          </div>
+          <div class="col pt-3">
+              <button class="btn btn-popup">GO TO NEXT STEP <i class="fa fa-angle-right"></i></button>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="text-center steps ">
+          <h2 class="steps-title">
+            How to invest
+          </h2>
+          <p class="steps-about">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+            quia error eos veniam totam in officia culpa corrupti sunt
+            obcaecati.
+          </p>
+          <div class="d-flex justify-content-around row-hl mb-4">
+            <div class="p-4 item-hl">
+              <div class="card">
+                <h5 class="card-title">1</h5>
+                <div class="card-img-wrap">
+									<img class="regiser-img"src="img/steps-act-reg.png" alt="">
+									<div class="steps-img-bg"></div>
+                </div>
+                <h5 class="card-title">REGISTER</h5>
+              </div>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="p-4 item-hl">
+								<div class="card">
+									<h5 class="card-title">2</h5>
+									<div class="card-img-wrap">
+										<img class="card-img"src="img/credit-card-act.png" alt="">
+										<div class="steps-img-bg"></div>
+									</div>
+									<h5 class="card-title">FUND YOUR ACCOUNT</h5>
+								</div>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+							</div>
+
+							<div class="p-4 item-hl">
+									<div class="card">
+										<h5 class="card-title">3</h5>
+										<div class="card-img-wrap">
+											<img class="expert-img" src="img/phot1.png" alt="">
+											<div class="steps-img-bg"></div>
+										</div>
+										<h5 class="card-title">expert advice</h5>
+									</div>
+									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+								</div>
+          </div>
+          <div>
+            <button class="btn btn-green">start now</button>
+          </div>
+        </section>
+      </div>
+
+      <section class="questions text-center">
+        <div class="container">
+          <h2 class="questions-title">
+            Frequently Asked Questions
+          </h2>
+
+          <div class="questions-list">
+            <div class="row question-card q1">
+              <div class="col-1">
+                <button class="btn btn-light question-btn span-4">
+									<i class="fa f1">&#xf067</i>
+                </button>
+              </div>
+              <div class="col-10 question align-middle">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="question-answer a1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur harum nulla doloremque deleniti, aspernatur adipisci
+                  nihil quas explicabo sapiente quaerat at, omnis perspiciatis
+                  voluptatibus aperiam incidunt maxime, repellat veniam illum.
+                </p>
+              </div>
+            </div>
+
+            <div class="row question-card q2">
+              <div class="col-1">
+                <button class="btn btn-light question-btn span-4">
+										<i class="fa f2">&#xf067</i>
+                </button>
+              </div>
+              <div class="col-10 question align-middle">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="question-answer a2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur harum nulla doloremque deleniti, aspernatur adipisci
+                  nihil quas explicabo sapiente quaerat at, omnis perspiciatis
+                  voluptatibus aperiam incidunt maxime, repellat veniam illum.
+                </p>
+              </div>
+            </div>
+
+            <div class="row question-card q3">
+              <div class="col-1">
+                <button class="btn btn-light question-btn span-4">
+                 <i class="fa f3">&#xf067</i>
+                </button>
+              </div>
+              <div class="col-10 question align-middle">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="question-answer a3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur harum nulla doloremque deleniti, aspernatur adipisci
+                  nihil quas explicabo sapiente quaerat at, omnis perspiciatis
+                  voluptatibus aperiam incidunt maxime, repellat veniam illum.
+                </p>
+              </div>
+            </div>
+
+            <div class="row question-card q4">
+              <div class="col-1">
+                <button class="btn btn-light question-btn span-4">
+                 <i class="fa f4">&#xf067</i>
+                </button>
+              </div>
+              <div class="col-10 question align-middle">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="question-answer a4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur harum nulla doloremque deleniti, aspernatur adipisci
+                  nihil quas explicabo sapiente quaerat at, omnis perspiciatis
+                  voluptatibus aperiam incidunt maxime, repellat veniam illum.
+                </p>
+              </div>
+            </div>
+
+            <div class="row question-card q5">
+              <div class="col-1">
+                <button class="btn btn-light question-btn span-4">
+                 <i class="fa f5">&#xf067</i>
+                </button>
+              </div>
+              <div class="col-10 question align-middle">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="question-answer a5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur harum nulla doloremque deleniti, aspernatur adipisci
+                  nihil quas explicabo sapiente quaerat at, omnis perspiciatis
+                  voluptatibus aperiam incidunt maxime, repellat veniam illum.
+                </p>
+              </div>
+            </div>
+
+            <div class="row question-card q6">
+              <div class="col-1">
+                <button class="btn btn-light question-btn">
+                 <i class="fa f6">&#xf067</i>
+                </button>
+              </div>
+              <div class="col-10 question align-middle">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="question-answer a6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur harum nulla doloremque deleniti, aspernatur adipisci
+                  nihil quas explicabo sapiente quaerat at, omnis perspiciatis
+                  voluptatibus aperiam incidunt maxime, repellat veniam illum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center">
+      <div class="container pt-5 pb-3">
+        <h5 class="footer-title"><span class="text-green">TOP</span>STOCKS</h5>
+        <p class="text-secondary">
+          <span class="footer-note">Important Risk Note:</span>Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Quam commodi dignissimos cum
+          atque saepe, fugiat ratione numquam libero fugit soluta non laudantium
+          alias. Saepe architecto sed, perspiciatis quaerat expedita suscipit
+          necessitatibus veniam perferendis rerum? Quo doloribus voluptatem
+          placeat culpa iure accusantium error at inventore distinctio, odio,
+          sunt omnis nulla beatae dolores voluptate hic amet! Alias rem modi
+          ipsa odit tenetur!
+        </p>
+        <div
+          class="footer-menu navbar navbar-expand-sm navbar-dark hr-center justify-content-center"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a href="#" class="nav-link hover-green">Risk Disclaimer</a>
+            </li>
+            <li class="nav-item ">
+              <a href="#" class="nav-link hover-green">Privacy Policy</a>
+            </li>
+            <li class="nav-item ">
+              <a href="#" class="nav-link hover-green">Website Agreement</a>
+            </li>
+            <li class="nav-item ">
+              <a href="#" class="nav-link hover-green ">Report Abuse</a>
+            </li>
+            <li class="nav-item ">
+              <a href="#" class="nav-link hover-green">Contact Us </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+      integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
